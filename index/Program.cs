@@ -1,23 +1,27 @@
-﻿namespace index
+﻿using System;
+
+namespace Product
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Product emp = new Product(40000, "Manager", "Charles", "Mathews", "EMP0111");
+            // Create a new product instance
+            Product product = new Product(101, "Laptop", "Electronics", 999.99, 50);
 
-            Console.WriteLine(emp[0]);
-            Console.WriteLine(emp[1]);
-            Console.WriteLine(emp[2]);
-            Console.WriteLine(emp[3]);
-            Console.WriteLine(emp[4]);
+            // Accessing properties using integer index
+            Console.WriteLine("Product ID: " + product[0]);
+            Console.WriteLine("Product Name: " + product[1]);
+            Console.WriteLine("Category: " + product[2]);
+            Console.WriteLine("Price: $" + product[3]);
+            Console.WriteLine("Stock Quantity: " + product[4]);
 
-            // Accessing using string attrName
-            Console.WriteLine("employee Salary: " + emp["Salary"]);
-            Console.WriteLine("employee Number: " + emp["empNumber"]);
-            Console.WriteLine("employee JobTitle: " + emp["jobTitle"]);
-            Console.WriteLine("employee Name: " + emp["Name"]);
-            Console.WriteLine("employee Surname: " + emp["surname"]);
+            // Accessing properties using string attribute name
+            Console.WriteLine("Product ID: " + product["productid"]);
+            Console.WriteLine("Product Name: " + product["productname"]);
+            Console.WriteLine("Category: " + product["category"]);
+            Console.WriteLine("Price: $" + product["price"]);
+            Console.WriteLine("Stock Quantity: " + product["stockquantity"]);
         }
     }
 }
