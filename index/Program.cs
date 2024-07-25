@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee(40000, "Manager", "Charles", "Mathews", "EMP0111");
+            Product emp = new Product(40000, "Manager", "Charles", "Mathews", "EMP0111");
 
             Console.WriteLine(emp[0]);
             Console.WriteLine(emp[1]);
