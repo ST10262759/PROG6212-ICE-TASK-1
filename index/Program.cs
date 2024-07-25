@@ -13,14 +13,14 @@ namespace Product
             Console.WriteLine("Product ID: " + product[0]);
             Console.WriteLine("Product Name: " + product[1]);
             Console.WriteLine("Category: " + product[2]);
-            Console.WriteLine("Price: $" + product[3]);
+            Console.WriteLine("Price: R" + product[3]);
             Console.WriteLine("Stock Quantity: " + product[4]);
 
             // Accessing properties using string attribute name
             Console.WriteLine("Product ID: " + product["productid"]);
             Console.WriteLine("Product Name: " + product["productname"]);
             Console.WriteLine("Category: " + product["category"]);
-            Console.WriteLine("Price: $" + product["price"]);
+            Console.WriteLine("Price: R" + product["price"]);
             Console.WriteLine("Stock Quantity: " + product["stockquantity"]);
         }
     }
